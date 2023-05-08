@@ -16,7 +16,7 @@ use App\Models\User;
 |
 */
 
-Route::apiResource('categories', CategoryApiController::class);
+Route::apiResource('/categories', CategoryApiController::class);
 
 Route::post('/login', function() {
     $validator = validator(request()->all(), [
